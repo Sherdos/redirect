@@ -14,7 +14,20 @@ pip install -r requirements.txt
 python app.py
 ```
 
-The server will start on `http://localhost:5000`
+The server will start on `http://localhost:5000` by default.
+
+## Configuration
+
+You can configure the application using environment variables:
+
+- `FLASK_HOST`: Host to bind to (default: `127.0.0.1`)
+- `FLASK_PORT`: Port to listen on (default: `5000`)
+- `FLASK_DEBUG`: Enable debug mode (default: `False`)
+
+Example:
+```bash
+FLASK_HOST=0.0.0.0 FLASK_DEBUG=true python app.py
+```
 
 ## Usage
 
